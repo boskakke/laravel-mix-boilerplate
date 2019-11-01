@@ -27,11 +27,7 @@ mix.js('resources/js/app.js', 'public/js/').sourceMaps(productionSourceMaps, 'so
 	}
 });
 
-// mix.copy('images', 'public/images', true);
-// mix.copy('src/assets/images', 'public/images', true);
-// mix.copy('src/assets/fonts', 'public/fonts', true);
-// mix.copy('src/*.php','public');
-// mix.copy('src/includes/*.php','public/includes');
+mix.copy('resources/images', 'public/images', true);
 
 mix.browserSync({
 	proxy: process.env.MIX_SENTRY_DSN_PUBLIC,
